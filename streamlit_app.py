@@ -41,7 +41,8 @@ def evaluate_url(url):
     # 최신성
     currency = 5
     latest_year = None
-current_year = datetime.now().year
+    current_year = datetime.now().year
+
     date_keywords = [
         "published", "publish",
         "article:published_time",
@@ -63,7 +64,6 @@ current_year = datetime.now().year
         years = re.findall(r"20\d{2}", text)
 
         if years:
-            current_year = datetime.now().year
             years = [
                 int(y)
                 for y in years
