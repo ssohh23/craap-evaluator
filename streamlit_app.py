@@ -41,7 +41,7 @@ def evaluate_url(url):
     # 최신성
     currency = 5
     latest_year = None
-
+current_year = datetime.now().year
     date_keywords = [
         "published", "publish",
         "article:published_time",
